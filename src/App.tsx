@@ -49,35 +49,46 @@ export const App: React.FC = () => {
               </a>
             </nav>
 
-            {/* Selector de Idioma ES / EN */}
-            <div
-              className="inline-flex items-center rounded-md bg-[#f3f3f5] border border-[#c8c5cb]/70 p-0.5"
-              role="group"
-              aria-label="Language selector"
-            >
-              <Globe className="w-3.5 h-3.5 text-[#47464b] ml-1.5 mr-1" />
-              <button
-                type="button"
-                onClick={() => setLang('es')}
-                className={`px-2 py-0.5 rounded text-[11px] font-mono font-medium tracking-wider transition-colors cursor-pointer ${
-                  lang === 'es'
+            <div className="flex items-center gap-3">
+              <a
+                href={profile.cvUrl}
+                download
+                target="_blank"
+                rel="noreferrer"
+                className="inline-flex items-center gap-1.5 px-1.25 py-0.5 rounded-[4px] border border-[#c8c5cb] text-[#1a1c1d] hover:border-[#000000] hover:bg-[#f3f3f5] transition-all text-[13px] leading-[20px]"
+              >
+                <span className="material-symbols-outlined text-[16px]">description</span>
+                <span>{lang === 'en' ? 'Resume' : 'CV'}</span>
+              </a>
+
+              {/* Selector de Idioma ES / EN */}
+              <div
+                className="inline-flex items-center rounded-md bg-[#f3f3f5] border border-[#c8c5cb]/70 p-0.5"
+                role="group"
+                aria-label="Language selector"
+              >
+                <Globe className="w-3.5 h-3.5 text-[#47464b] ml-1.5 mr-1" />
+                <button
+                  type="button"
+                  onClick={() => setLang('es')}
+                  className={`px-2 py-0.5 rounded text-[11px] font-mono font-medium tracking-wider transition-colors cursor-pointer ${lang === 'es'
                     ? 'bg-[#000000] text-white'
                     : 'text-[#47464b] hover:text-[#1a1c1d]'
-                }`}
-              >
-                ES
-              </button>
-              <button
-                type="button"
-                onClick={() => setLang('en')}
-                className={`px-2 py-0.5 rounded text-[11px] font-mono font-medium tracking-wider transition-colors cursor-pointer ${
-                  lang === 'en'
+                    }`}
+                >
+                  ES
+                </button>
+                <button
+                  type="button"
+                  onClick={() => setLang('en')}
+                  className={`px-2 py-0.5 rounded text-[11px] font-mono font-medium tracking-wider transition-colors cursor-pointer ${lang === 'en'
                     ? 'bg-[#000000] text-white'
                     : 'text-[#47464b] hover:text-[#1a1c1d]'
-                }`}
-              >
-                EN
-              </button>
+                    }`}
+                >
+                  EN
+                </button>
+              </div>
             </div>
           </div>
         </div>
