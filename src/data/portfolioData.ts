@@ -14,6 +14,7 @@ export const PORTFOLIO_DATA: Record<Language, PortfolioContent> = {
       downloadCv: 'Descargar CV (PDF)',
       viewProject: 'Ver pagina del proyecto',
       sourceCode: 'Código',
+      companyWebsite: 'Sitio de la Empresa',
       previewPlaceholder: 'Vista previa',
     },
     sections: {
@@ -28,7 +29,7 @@ export const PORTFOLIO_DATA: Record<Language, PortfolioContent> = {
     profile: {
       name: 'Gustavo Berne',
       location: 'Miranda, Venezuela (UTC-4 / Remoto)',
-      mainSkill: 'Desarrollador Full-Stack & Frontend (TypeScript · React · Next.js · Node.js)',
+      mainSkill: 'Desarrollador Full-Stack & Frontend Junior',
       about:
         'Estudiante de Ciencias de la Computación (8.° Semestre) en la Universidad Central de Venezuela (UCV) con experiencia práctica desarrollando aplicaciones web en producción, plataformas Multi-LLM y sistemas Full-Stack en TypeScript.',
       email: 'gbernev@gmail.com',
@@ -45,8 +46,7 @@ export const PORTFOLIO_DATA: Record<Language, PortfolioContent> = {
           'Aplicación web centralizada que unifica múltiples Modelos de Lenguaje (LLMs) de texto y motores de generación de imágenes en un único espacio de trabajo con memoria de contexto dinámica.',
         technologies: ['Next.js', 'React', 'TypeScript', 'Tailwind CSS', 'APIs de LLMs', 'Figma'],
         image: '/projects/LLM.png',
-        repoUrl: 'https://github.com/Jeyz29',
-
+        companyUrl: 'https://www.kromaticos.com/',
       },
       {
         id: 'ucv-serverless-course-registration',
@@ -136,6 +136,7 @@ export const PORTFOLIO_DATA: Record<Language, PortfolioContent> = {
       downloadCv: 'Download CV (PDF)',
       viewProject: 'Live Project',
       sourceCode: 'Code',
+      companyWebsite: 'Company Website',
       previewPlaceholder: 'Preview',
     },
     sections: {
@@ -150,7 +151,7 @@ export const PORTFOLIO_DATA: Record<Language, PortfolioContent> = {
     profile: {
       name: 'Gustavo Berne',
       location: 'Miranda, Venezuela (UTC-4 / Remote)',
-      mainSkill: 'Full-Stack & Frontend Developer (TypeScript · React · Next.js · Node.js)',
+      mainSkill: 'Junior Full-Stack & Frontend Developer ',
       about:
         'Bachelor of Science in Computer Science student (8th Semester) at the Central University of Venezuela (UCV) with hands-on experience building production web applications, Multi-LLM platforms, and Full-Stack TypeScript systems.',
       email: 'gbernev@gmail.com',
@@ -167,7 +168,7 @@ export const PORTFOLIO_DATA: Record<Language, PortfolioContent> = {
           'Centralized web application unifying multiple text Large Language Models (LLMs) and image generation engines within a single workspace featuring dynamic chat context memory.',
         technologies: ['Next.js', 'React', 'TypeScript', 'Tailwind CSS', 'LLM APIs', 'Figma'],
         image: '/projects/LLM.png',
-        repoUrl: 'https://github.com/Jeyz29',
+        companyUrl: 'https://www.kromaticos.com/',
       },
       {
         id: 'ucv-serverless-course-registration',

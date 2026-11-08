@@ -20,6 +20,7 @@ export interface Project {
   image?: string;
   liveUrl?: string;
   repoUrl?: string;
+  companyUrl?: string;
 }
 
 export interface Experience {
@@ -58,6 +59,7 @@ export interface PortfolioContent {
     downloadCv: string;
     viewProject: string;
     sourceCode: string;
+    companyWebsite: string;
     previewPlaceholder: string;
   };
   sections: {
