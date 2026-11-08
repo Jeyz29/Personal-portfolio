@@ -14,7 +14,7 @@ import { PORTFOLIO_DATA } from './data/portfolioData.ts';
 import type { Language } from './types/portfolio.ts';
 
 export const App: React.FC = () => {
-  const [lang, setLang] = useState<Language>('es');
+  const [lang, setLang] = useState<Language>('en');
   const content = PORTFOLIO_DATA[lang];
   const { profile, projects, experiences, educations, skills, nav, buttons, sections } = content;
 
