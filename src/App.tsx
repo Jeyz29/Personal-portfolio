@@ -7,6 +7,7 @@ import {
   Briefcase,
   GraduationCap,
   FolderGit2,
+  Wrench,
   Globe,
 } from 'lucide-react';
 import { PORTFOLIO_DATA } from './data/portfolioData.ts';
@@ -355,16 +356,14 @@ export const App: React.FC = () => {
         {/* 4. Habilidades Técnicas */}
         <section
           id="habilidades"
-          className="w-full max-w-[1140px] mx-auto px-4 sm:px-6 py-16 scroll-mt-16"
+          className="w-full bg-[#f3f3f5] border-y border-[#e5e7eb] py-16 scroll-mt-16"
         >
-          <div className="flex flex-col gap-12">
-            {/* Header */}
-            <div className="flex flex-col md:flex-row md:items-end justify-between gap-2 pb-2">
-              <div>
-                <h2 className="font-display text-3xl sm:text-[40px] sm:leading-[48px] text-[#1a1c1d] tracking-[-0.015em] font-normal">
-                  {sections.skillsTitle}
-                </h2>
-              </div>
+          <div className="max-w-[1140px] mx-auto px-4 sm:px-6 space-y-10">
+            <div className="flex items-center gap-2.5">
+              <Wrench className="w-5 h-5 text-[#4b41e1]" />
+              <h2 className="font-display text-3xl sm:text-[40px] sm:leading-[48px] text-[#1a1c1d] tracking-[-0.015em] font-normal">
+                {sections.skillsTitle}
+              </h2>
             </div>
 
             {/* Skills Matrix 4 Columns */}
