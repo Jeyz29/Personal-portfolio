@@ -7,7 +7,6 @@ import {
   Briefcase,
   GraduationCap,
   FolderGit2,
-  Wrench,
   Globe,
 } from 'lucide-react';
 import { PORTFOLIO_DATA } from './data/portfolioData.ts';
@@ -356,34 +355,49 @@ export const App: React.FC = () => {
         {/* 4. Habilidades Técnicas */}
         <section
           id="habilidades"
-          className="w-full bg-[#f3f3f5] border-y border-[#e5e7eb] py-16 scroll-mt-16"
+          className="w-full max-w-[1140px] mx-auto px-4 sm:px-6 py-16 scroll-mt-16"
         >
-          <div className="max-w-[1140px] mx-auto px-4 sm:px-6 space-y-10">
-            <div className="flex items-center gap-2.5">
-              <Wrench className="w-5 h-5 text-[#4b41e1]" />
-              <h2 className="font-display text-3xl sm:text-[40px] sm:leading-[48px] text-[#1a1c1d] tracking-[-0.015em] font-normal">
-                {sections.skillsTitle}
-              </h2>
+          <div className="flex flex-col gap-12">
+            {/* Header */}
+            <div className="flex flex-col md:flex-row md:items-end justify-between gap-2 pb-2">
+              <div>
+                <h2 className="font-display text-3xl sm:text-[40px] sm:leading-[48px] text-[#1a1c1d] tracking-[-0.015em] font-normal">
+                  {sections.skillsTitle}
+                </h2>
+              </div>
             </div>
 
-            <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
+            {/* Skills Matrix 4 Columns */}
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
               {skills.map((group) => (
                 <div
                   key={group.category}
-                  className="p-6 rounded-xl bg-white border border-[#e5e7eb] shadow-xs space-y-4"
+                  className="bg-white p-7 rounded-xl border border-[#e5e7eb] shadow-xs flex flex-col justify-between"
                 >
-                  <h3 className="text-[16px] font-semibold text-[#1a1c1d] tracking-tight">
-                    {group.category}
-                  </h3>
-                  <div className="flex flex-wrap gap-2">
-                    {group.items.map((skill) => (
-                      <span
-                        key={skill}
-                        className="px-2.5 py-1 rounded bg-[#f3f3f5] border border-[#e5e7eb] font-mono text-[12px] text-[#1a1c1d]"
-                      >
-                        {skill}
+                  <div className="flex flex-col gap-4">
+                    <div className="flex items-center gap-2">
+                      <span className="material-symbols-outlined text-[#4b41e1] text-[20px]">
+                        {group.icon}
                       </span>
-                    ))}
+                      <h3 className="text-[18px] leading-[26px] font-semibold text-[#1a1c1d]">
+                        {group.category}
+                      </h3>
+                    </div>
+
+                    <ul className="flex flex-col gap-2 text-[13px] leading-[20px] text-[#47464b]">
+                      {group.items.map((skill, index) => (
+                        <li
+                          key={skill}
+                          className={
+                            index === 0
+                              ? 'flex items-center py-1 bg-[#f3f3f5] px-2 rounded font-semibold text-[#1a1c1d]'
+                              : 'flex items-center py-1 px-2'
+                          }
+                        >
+                          <span>{skill}</span>
+                        </li>
+                      ))}
+                    </ul>
                   </div>
                 </div>
               ))}

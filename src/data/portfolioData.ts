@@ -113,16 +113,24 @@ export const PORTFOLIO_DATA: Record<Language, PortfolioContent> = {
     ],
     skills: [
       {
-        category: 'Frontend',
-        items: ['React 19', 'Next.js', 'TypeScript', 'JavaScript (ES6+)', 'Tailwind CSS', 'HTML5 & CSS3', 'Recharts', 'Figma'],
+        category: 'Lenguajes',
+        icon: 'code_blocks',
+        items: ['TypeScript', 'JavaScript (ES6+)', 'Python', 'Java', 'C++', 'HTML5 & CSS3'],
       },
       {
-        category: 'Backend y Sistemas',
-        items: ['Node.js', 'Express', 'Python', 'Django', 'APIs RESTful', 'Google Apps Script', 'Java', 'C++'],
+        category: 'Frontend',
+        icon: 'web',
+        items: ['React 19', 'Next.js', 'Tailwind CSS', 'Recharts', 'Figma'],
+      },
+      {
+        category: 'Backend & APIs',
+        icon: 'database',
+        items: ['Node.js', 'Express', 'Django', 'APIs RESTful', 'Google Apps Script', 'APIs Multi-LLM'],
       },
       {
         category: 'Bases de Datos y Herramientas',
-        items: ['SQL Server', 'SQLite', 'Git & GitHub', 'Docker', 'APIs Multi-LLM', 'Postman'],
+        icon: 'terminal',
+        items: ['SQL Server', 'SQLite', 'Git & GitHub', 'Docker', 'Postman'],
       },
     ],
   },
@@ -238,16 +246,24 @@ export const PORTFOLIO_DATA: Record<Language, PortfolioContent> = {
     ],
     skills: [
       {
-        category: 'Frontend',
-        items: ['React 19', 'Next.js', 'TypeScript', 'JavaScript (ES6+)', 'Tailwind CSS', 'HTML5 & CSS3', 'Recharts', 'Figma'],
+        category: 'Languages',
+        icon: 'code_blocks',
+        items: ['TypeScript', 'JavaScript (ES6+)', 'Python', 'Java', 'C++', 'HTML5 & CSS3'],
       },
       {
-        category: 'Backend & Systems',
-        items: ['Node.js', 'Express', 'Python', 'Django', 'RESTful APIs', 'Google Apps Script', 'Java', 'C++'],
+        category: 'Frontend',
+        icon: 'web',
+        items: ['React 19', 'Next.js', 'Tailwind CSS', 'Recharts', 'Figma'],
+      },
+      {
+        category: 'Backend & APIs',
+        icon: 'database',
+        items: ['Node.js', 'Express', 'Django', 'RESTful APIs', 'Google Apps Script', 'Multi-LLM APIs'],
       },
       {
         category: 'Databases & Tools',
-        items: ['SQL Server', 'SQLite', 'Git & GitHub', 'Docker', 'Multi-LLM APIs', 'Postman'],
+        icon: 'terminal',
+        items: ['SQL Server', 'SQLite', 'Git & GitHub', 'Docker', 'Postman'],
       },
     ],
   },
