@@ -2,7 +2,9 @@ export type Language = 'es' | 'en';
 
 export interface Profile {
   name: string;
+  availabilityBadge: string;
   location: string;
+  remoteStatus: string;
   mainSkill: string;
   about: string;
   email: string;

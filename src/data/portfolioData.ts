@@ -22,13 +22,16 @@ export const PORTFOLIO_DATA: Record<Language, PortfolioContent> = {
       experienceTitle: 'Experiencia Laboral',
       educationTitle: 'Formación',
       skillsTitle: 'Habilidades Técnicas',
-      contactTitle: '¿Hablamos?',
-      contactSubtitle: 'Disponible para oportunidades remotas como desarrollador Junior.',
-      footerNote: 'Desarrollado con React, TypeScript y Tailwind CSS',
+      contactTitle: '¡Listo para aportar soluciones a cualquier tipo de problemas!',
+      contactSubtitle:
+        'Abierto a roles full-time como Desarrollador Junior Full-Stack o Frontend, oportunidades en etapas tempranas de alto impacto y proyectos por contrato. Ubicado en Miranda, Venezuela, con total disponibilidad para equipos remotos.',
+      footerNote: 'Desarrollado con cuidado y dedicación.',
     },
     profile: {
       name: 'Gustavo Berne',
-      location: 'Miranda, Venezuela (UTC-4 / Remoto)',
+      availabilityBadge: 'Disponible para roles full-time y por contrato',
+      location: 'Miranda, Venezuela • VET (UTC-4)',
+      remoteStatus: 'Listo para trabajo remoto',
       mainSkill: 'Desarrollador Full-Stack & Frontend Junior',
       about:
         'Estudiante de Ciencias de la Computación (8.° Semestre) en la Universidad Central de Venezuela (UCV) con experiencia práctica desarrollando aplicaciones web en producción, plataformas Multi-LLM y sistemas Full-Stack en TypeScript.',
@@ -144,13 +147,16 @@ export const PORTFOLIO_DATA: Record<Language, PortfolioContent> = {
       experienceTitle: 'Work Experience',
       educationTitle: 'Education',
       skillsTitle: 'Technical Skills',
-      contactTitle: 'Let’s Talk',
-      contactSubtitle: 'Available for remote opportunities as a Junior Developer.',
-      footerNote: 'Built with React, TypeScript, and Tailwind CSS',
+      contactTitle: 'Ready to contribute with solutions for any kind of problem!',
+      contactSubtitle:
+        'Open to full-time junior Full-Stack and Frontend engineering roles, high-impact early-stage opportunities, and focused contract projects. Based in Miranda, Venezuela with full availability for remote teams.',
+      footerNote: 'Engineered with care and craft.',
     },
     profile: {
       name: 'Gustavo Berne',
-      location: 'Miranda, Venezuela (UTC-4 / Remote)',
+      availabilityBadge: 'Available for full-time & contract roles',
+      location: 'Miranda, Venezuela • VET (UTC-4)',
+      remoteStatus: 'Remote-ready',
       mainSkill: 'Junior Full-Stack & Frontend Developer ',
       about:
         'Bachelor of Science in Computer Science student (8th Semester) at the Central University of Venezuela (UCV) with hands-on experience building production web applications, Multi-LLM platforms, and Full-Stack TypeScript systems.',

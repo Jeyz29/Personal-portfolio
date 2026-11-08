@@ -90,11 +90,11 @@ export const App: React.FC = () => {
           className="w-full max-w-[1140px] mx-auto px-4 sm:px-6 pt-12 pb-16 scroll-mt-20"
         >
           <div className="flex flex-col gap-6 max-w-4xl">
-            {/* Location Pill Badge */}
+            {/* Availability Pill Badge */}
             <div className="inline-flex items-center gap-2 self-start px-3 py-1.5 rounded-full bg-white border border-[#e5e7eb] shadow-xs">
               <span className="w-2 h-2 rounded-full bg-[#059669] animate-pulse" />
               <span className="font-mono text-[11px] font-medium text-[#47464b] uppercase tracking-[0.06em]">
-                {profile.location}
+                {profile.availabilityBadge}
               </span>
             </div>
 
@@ -397,13 +397,23 @@ export const App: React.FC = () => {
           className="w-full max-w-[1140px] mx-auto px-4 sm:px-6 py-16 scroll-mt-16"
         >
           <div className="bg-[#000000] text-white rounded-xl p-8 sm:p-12 shadow-xl flex flex-col lg:flex-row items-start lg:items-center justify-between gap-8">
-            <div className="space-y-3 max-w-xl">
+            <div className="space-y-4 max-w-xl">
               <h2 className="font-display text-3xl sm:text-[44px] sm:leading-[52px] text-white tracking-tight font-normal">
                 {sections.contactTitle}
               </h2>
               <p className="text-base sm:text-[18px] text-white/80 leading-relaxed">
                 {sections.contactSubtitle}
               </p>
+
+              {/* Ubicación, Zona Horaria y Disponibilidad */}
+              <div className="flex flex-col sm:flex-row sm:items-center gap-3 pt-1 font-mono text-[11px] text-[#858387]">
+                <div className="flex items-center gap-2">
+                  <span className="w-2 h-2 rounded-full bg-[#059669]" />
+                  <span className="text-white/90">{profile.location}</span>
+                </div>
+                <span className="hidden sm:inline">•</span>
+                <span>{profile.remoteStatus}</span>
+              </div>
             </div>
 
             <div className="flex flex-wrap items-center gap-3">
@@ -445,8 +455,39 @@ export const App: React.FC = () => {
         </section>
       </main>
 
-      <footer className="w-full bg-white border-t border-[#c8c5cb]/50 py-10 text-center font-mono text-xs text-[#47464b]">
-        {profile.name} · {sections.footerNote}
+      <footer className="w-full bg-white border-t border-[#c8c5cb]/50 mt-12">
+        <div className="max-w-[1140px] mx-auto px-4 sm:px-6 py-12">
+          <div className="flex flex-col md:flex-row items-center justify-between gap-4">
+            <p className="text-[13px] text-[#47464b]">
+              © 2026 {profile.name}. {sections.footerNote}
+            </p>
+
+            <div className="flex items-center gap-7">
+              <a
+                href={profile.github}
+                target="_blank"
+                rel="noreferrer"
+                className="font-mono text-[11px] font-medium text-[#47464b] hover:text-[#4b41e1] uppercase tracking-[0.06em] transition-colors"
+              >
+                GitHub
+              </a>
+              <a
+                href={profile.linkedin}
+                target="_blank"
+                rel="noreferrer"
+                className="font-mono text-[11px] font-medium text-[#47464b] hover:text-[#4b41e1] uppercase tracking-[0.06em] transition-colors"
+              >
+                LinkedIn
+              </a>
+              <a
+                href={`mailto:${profile.email}`}
+                className="font-mono text-[11px] font-medium text-[#47464b] hover:text-[#4b41e1] uppercase tracking-[0.06em] transition-colors"
+              >
+                Email
+              </a>
+            </div>
+          </div>
+        </div>
       </footer>
     </div>
   );
