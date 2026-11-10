@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://portfolio-gustavo-berne.vercel.app/sitemap.xml
