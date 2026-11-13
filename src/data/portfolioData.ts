@@ -53,7 +53,7 @@ export const PORTFOLIO_DATA: Record<Language, PortfolioContent> = {
       },
       {
         id: 'ucv-serverless-course-registration',
-        title: 'Sistema de Registro de Cursos y Pagos Serverless',
+        title: 'Sistema de Registro de Cursos y Pagos',
         role: 'Desarrollador Full-Stack · Facultad de Ciencias UCV',
         description:
           'Plataforma transaccional SPA en producción real ($0 costo operativo) que automatiza la inscripción de estudiantes, validación de cupos y resguardo de comprobantes de pago.',
@@ -186,7 +186,7 @@ export const PORTFOLIO_DATA: Record<Language, PortfolioContent> = {
       },
       {
         id: 'ucv-serverless-course-registration',
-        title: 'Serverless Course Registration & Payment System',
+        title: 'Course & Payment Registration System',
         role: 'Full-Stack Developer · UCV Faculty of Sciences',
         description:
           'Transactional Single Page Application in live production ($0 operating cost) automating student enrollments, quota validation, and payment voucher storage.',
