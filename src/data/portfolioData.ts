@@ -63,11 +63,11 @@ export const PORTFOLIO_DATA: Record<Language, PortfolioContent> = {
       },
       {
         id: 'multi-currency-expense-tracker',
-        title: 'Gestor de Gastos y Suscripciones Multimoneda',
+        title: 'G-Budget: Gestor Financiero y Suscripciones Multimoneda',
         role: 'Proyecto de Ingeniería Full-Stack',
         description:
-          'Plataforma de finanzas personales y suscripciones (USD, EUR, VES) con sincronización automática de tasas oficiales del BCV, caché en SQLite y analítica interactiva.',
-        technologies: ['TypeScript', 'React 19', 'Node.js', 'Express 5', 'SQLite', 'Tailwind CSS v4', 'Recharts'],
+          'Plataforma de finanzas personales y suscripciones (USD, EUR, VES) con autenticación en la nube (Supabase Auth / JWT), sincronización automática de tasas oficiales del BCV con caché local y analítica interactiva.',
+        technologies: ['TypeScript', 'React 19', 'Express 5', 'Supabase (PostgreSQL)', 'SQLite', 'Tailwind CSS v4', 'Recharts'],
         image: '/projects/Gestor.png',
         repoUrl: 'https://github.com/Jeyz29/Proyecto-Gestor-de-gastos',
       },
@@ -125,12 +125,12 @@ export const PORTFOLIO_DATA: Record<Language, PortfolioContent> = {
       {
         category: 'Backend & APIs',
         icon: 'database',
-        items: ['Node.js', 'Express', 'Django', 'APIs RESTful', 'Google Apps Script', 'APIs Multi-LLM'],
+        items: ['Node.js', 'Express', 'Django', 'APIs RESTful', 'Supabase (BaaS)', 'Google Apps Script', 'APIs Multi-LLM'],
       },
       {
         category: 'Bases de Datos y Herramientas',
         icon: 'terminal',
-        items: ['SQL Server', 'SQLite', 'Git & GitHub', 'Docker', 'Postman'],
+        items: ['PostgreSQL', 'SQL Server', 'SQLite', 'Docker', 'Git & GitHub', 'Postman'],
       },
     ],
   },
@@ -196,11 +196,11 @@ export const PORTFOLIO_DATA: Record<Language, PortfolioContent> = {
       },
       {
         id: 'multi-currency-expense-tracker',
-        title: 'Multi-Currency Expense & Subscription Manager',
+        title: 'G-Budget: Multi-Currency Financial & Subscription Platform',
         role: 'Full-Stack Engineering Project',
         description:
-          'Personal finance and recurring subscription platform (USD, EUR, VES) featuring automatic official BCV exchange rate synchronization, SQLite caching, and interactive analytics.',
-        technologies: ['TypeScript', 'React 19', 'Node.js', 'Express 5', 'SQLite', 'Tailwind CSS v4', 'Recharts'],
+          'Personal finance and recurring subscription platform (USD, EUR, VES) featuring secure cloud authentication (Supabase Auth / JWT), automated official BCV rate synchronization with fallback caching, and interactive analytics.',
+        technologies: ['TypeScript', 'React 19', 'Express 5', 'Supabase (PostgreSQL)', 'SQLite', 'Tailwind CSS v4', 'Recharts'],
         image: '/projects/Gestor.png',
         repoUrl: 'https://github.com/Jeyz29/Proyecto-Gestor-de-gastos',
       },
@@ -258,12 +258,12 @@ export const PORTFOLIO_DATA: Record<Language, PortfolioContent> = {
       {
         category: 'Backend & APIs',
         icon: 'database',
-        items: ['Node.js', 'Express', 'Django', 'RESTful APIs', 'Google Apps Script', 'Multi-LLM APIs'],
+        items: ['Node.js', 'Express', 'Django', 'RESTful APIs', 'Supabase (BaaS)', 'Google Apps Script', 'Multi-LLM APIs'],
       },
       {
         category: 'Databases & Tools',
         icon: 'terminal',
-        items: ['SQL Server', 'SQLite', 'Git & GitHub', 'Docker', 'Postman'],
+        items: ['PostgreSQL', 'SQL Server', 'SQLite', 'Docker', 'Git & GitHub', 'Postman'],
       },
     ],
   },
